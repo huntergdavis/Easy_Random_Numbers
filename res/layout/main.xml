@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tableRowText" android:layout_alignParentTop="true"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+		<TextView android:id="@+id/minText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Min"
+			android:layout_weight="1" />
+		<TextView android:id="@+id/maxText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Max"
+			android:layout_weight="1" />
+		<TextView android:id="@+id/pressText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Press Here"
+			android:layout_weight="1" />
+	</TableRow>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow1" android:layout_below="@+id/tableRowText"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+		<EditText android:layout_width="fill_parent" android:numeric="decimal"
+			android:id="@+id/min" android:layout_weight="1" android:text="0"
+			android:layout_height="wrap_content"></EditText>
+		<EditText android:layout_width="fill_parent" android:numeric="decimal"
+			android:id="@+id/max" android:layout_weight="1" android:text="10"
+			android:layout_height="wrap_content"></EditText>
+		<Button android:text="Generate" android:layout_weight="1"
+			android:id="@+id/customButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+	</TableRow>
+	<TextView android:layout_width="fill_parent"
+		android:layout_below="@+id/tableRow1" android:id="@+id/instructions"
+		android:text="Press Any Button Below to Generate That Range"
+		android:layout_height="wrap_content"></TextView>
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow2" android:layout_below="@+id/instructions"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+
+		<Button android:text="1-2" android:layout_weight="1"
+			android:id="@+id/twoButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-3" android:layout_weight="1"
+			android:id="@+id/threeButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-4" android:layout_weight="1"
+			android:id="@+id/fourButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-5" android:layout_weight="1"
+			android:id="@+id/fiveButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-6" android:layout_weight="1"
+			android:id="@+id/sixButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+
+	</TableRow>
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow3" android:layout_below="@+id/tableRow2"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+
+		<Button android:text="1-8" android:layout_weight="1"
+			android:id="@+id/eightButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-12" android:layout_weight="1"
+			android:id="@+id/twelveButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-15" android:layout_weight="1"
+			android:id="@+id/fifteenButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-20" android:layout_weight="1"
+			android:id="@+id/twentyButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-24" android:layout_weight="1"
+			android:id="@+id/twentyfourButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+
+	</TableRow>
+
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:id="@+id/tableRow4" android:layout_below="@+id/tableRow3"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+
+		<Button android:text="1-25" android:layout_weight="1"
+			android:id="@+id/twentyfiveButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-50" android:layout_weight="1"
+			android:id="@+id/fiftyButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-64" android:layout_weight="1"
+			android:id="@+id/sixtyfourButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-100" android:layout_weight="1"
+			android:id="@+id/onehundredButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+		<Button android:text="1-500" android:layout_weight="1"
+			android:id="@+id/fivehundredButton" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></Button>
+
+
+	</TableRow>
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_below="@+id/tableRow4" android:id="@+id/resultsText"
+		android:text="Results:" android:layout_height="wrap_content"></TextView>
+
+	<EditText android:layout_width="fill_parent" android:numeric="decimal"
+	android:layout_below="@+id/resultsText" 
+		android:id="@+id/results" android:text="0" android:layout_height="wrap_content"></EditText>
+
+
+
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14defeafbeb053"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+
+</RelativeLayout>
